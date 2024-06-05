@@ -1,0 +1,70 @@
+<!-- <div class="slider-image">
+  <div class="image show-on-mobile-only">
+    <img src="assets/images/paul-teysen-VODj-TWKpRA-unsplash.jpg">
+    <ion-text>
+      
+        <span>KAZ REFINERY OIL </span>
+        <p>WE ARE ONE OF THE LEADING, INDEPENDENT AND VERTICALLY INTEGRATED OIL COMPANY IN REPUBLIC OF KAZAKHSTAN.</p>
+          
+    </ion-text>
+  </div>
+
+  <div class="image show-on-desktop-only">
+    <img src="assets/images/paul-teysen-VODj-TWKpRA-unsplash.jpg" width="2000">
+    <ion-text>
+      <ion-text>
+      
+        <span>KAZ REFINERY OIL </span>
+        <p>WE ARE ONE OF THE LEADING, INDEPENDENT AND VERTICALLY INTEGRATED OIL COMPANY IN REPUBLIC OF KAZAKHSTAN.</p>
+          
+    </ion-text>
+    </ion-text>
+  </div>
+</div> -->
+
+  <div *ngIf="sliderConfig" class="slider-image">
+  <swiper-container
+    thumbs-swiper=".mySwiper2"  
+    navigation="true"
+    watch-slides-progress="true" 
+    [autoplay]="sliderConfig.autoplay" >
+    <swiper-slide *ngFor="let slide of images; let i = index">
+        <div class="image" >
+          <img [src]="slide.image" [width]="2000">
+            <div class="text-prop"> 
+              <ion-text>
+                <span> {{slide.title}} </span>
+                <p>{{slide.about}}</p>  
+              </ion-text>                      
+          </div>
+        </div>
+
+    <!--     <div class="image show-on-mobile-only">
+          <img [src]="slide.images">
+          <ion-text>                      
+              <span> {{slide.title}} </span>
+              <p> {{slide.about}} </p>                
+        </ion-text>
+        </div> -->
+     
+    </swiper-slide>
+  </swiper-container>
+</div>
+
+<!-- <div [style.padding]="'5px'" *ngIf="sliderConfig" class="show-on-mobile-only">
+  <swiper-container
+    thumbs-swiper=".mySwiper2"
+    navigation="true"
+    class="sdViewProductSwiper">
+    <swiper-slide>
+      <div class="slider-image">
+        <div class="image" *ngFor="let slide of images; let i = index">
+          <img [src]="slide.image">
+          <ion-text>
+            <span>KAZ <span class="refinery"> Refinery </span></span>
+          </ion-text>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</div> -->

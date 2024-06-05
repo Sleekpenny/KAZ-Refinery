@@ -1,0 +1,49 @@
+.logo {
+    display: flex;
+    gap: 10px;
+    //justify-content: center;
+    align-items: center;
+    //margin: 5px;
+    text-decoration: none;
+
+    img {
+        width:120px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+
+    ion-label {
+        font-weight: 700;
+        font-size: 40px;
+        color: rgb(222, 218, 218);
+    }
+
+    span {
+        color: rgba(205, 44, 44, 0.919);
+        font-size: 18px;
+        margin-right: 20px
+    }
+
+}
+
+.logo:hover {
+    span{        
+        color: rgb(20, 203, 20)
+    }
+}
+
+// styling for screen below 512px...
+@media only screen and (max-width: 512px) {
+// min-width styling start from the reference px value
+
+    .logo {
+        img {
+            width: 50px
+        }
+
+        ion-label {
+            font-size: 20px;
+        }
+    }
+
+  }

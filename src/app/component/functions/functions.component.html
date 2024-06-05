@@ -1,0 +1,19 @@
+<div class="function-wrappers">
+  <div *ngFor="let item of items; let i=index" class="function-wrapper">
+    <div class="border-line"></div>
+    <div class="function-item">
+     <img [src]="item.image">
+      <ion-label>{{item.title}}</ion-label>
+      <span>{{item.body}}</span>
+      <div class="arrow-navigate">
+        <p>More Details 
+          <ion-icon 
+          name="arrow-forward" 
+          color="medium"
+          navigateTo="/"
+          ></ion-icon> 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.left-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+ion-icon {
+    font-size: 30px;
+    color: rgb(217, 215, 215);
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+ion-icon:hover {
+    font-size: 30px;
+    color: grey;
+    transform: scale(1.2);
+}
+}
+
+@media only screen and (max-width: 512px) {
+    .left-menu {
+        ion-icon {
+            font-size: 20px;
+        }
+
+        ion-icon:hover {
+            transform: scale(0.9);
+        }
+    }
+}

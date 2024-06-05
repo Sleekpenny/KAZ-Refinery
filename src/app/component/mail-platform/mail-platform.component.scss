@@ -1,0 +1,35 @@
+.my-custom-class .modal-wrapper{
+        height: 300px;
+        width: 200px;
+        background: #fff;
+    }
+   
+   ion-content {
+        height: 100px;
+
+        ion-list {
+
+            ion-item {
+                padding: 20px;
+                display: block;
+                cursor: pointer;
+                
+                img {
+                    width: 50px;
+                 //   margin: 20px;
+                }
+
+                ion-label {
+                    font-size: 16px;
+                }
+            }
+
+        
+        }
+    }
+
+
+
+
+    @media only screen and (max-width: 512px) {
+}

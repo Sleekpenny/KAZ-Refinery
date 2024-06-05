@@ -1,0 +1,73 @@
+.box {
+    padding: 40px;
+    box-shadow: 2px 1px 3px 1px black;
+    width: 400px;
+    position: relative;
+
+    .header {
+        ion-label {            
+            font-weight: 500;
+            font-size: 24px;
+        }      
+    } 
+
+    .body-part {
+        margin-top: 20px;
+        height: 250px;  
+
+        p {
+            
+            text-align: justify;
+        }  
+    }
+
+    .little-box {
+        position: absolute;
+        top: 320px;
+        left: 340px;
+        padding: 10px;
+        background-color: rgb(44, 6, 6);
+
+        span {
+            font-size: 24px;
+            color:antiquewhite
+        }
+    }
+}
+
+@media only screen and (max-width: 512px) {
+
+    .box {
+        //padding: 20px;
+        width: 250px;
+        .header {
+            ion-label {            
+                font-size: 14px;
+            }      
+        } 
+    
+        .body-part {
+            height: auto;
+            margin-top: 10px;
+            width: 100%;
+            
+            p {
+                font-size: 10px;
+                line-height: 12px;
+                //border: 2px solid white
+            }
+        }
+    
+        .little-box {
+            position: absolute;
+            top: 190px;
+            left: 200px;
+            padding: 5px;      
+    
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+   
+}

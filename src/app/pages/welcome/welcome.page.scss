@@ -1,0 +1,39 @@
+
+.service-page {
+    position:relative;
+    margin-top: 50px;
+    transform: translateY(-100px);
+    z-index: 1;
+
+}
+
+.guiding-page {
+    margin-top: 50px;
+}
+
+.about-page {
+    margin-top: 50px;
+}
+
+.banner-attributes {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 512px){
+    .service-page {
+        margin-top: 0;
+        transform: translateY(-30px);
+    }
+
+    .guiding-page {
+        margin-top: 20px;
+    }
+
+    .about-page {
+        margin-top: 20px;
+    }
+
+    .banner-attributes {
+        margin-top: 20px;
+    }
+}

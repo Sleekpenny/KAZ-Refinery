@@ -1,0 +1,51 @@
+ion-list {
+    display: flex;
+    flex-direction: column;
+  //  gap: 5px;
+    margin-top: 10px;
+
+    ion-item {
+        cursor: pointer;
+        ion-icon {
+            font-size: 18px;
+            color:rgb(90, 87, 87);
+        }
+
+        ion-label {
+            font-size: 16px;
+            color:rgb(90, 87, 87);
+        }
+    }
+
+    ion-item:hover {
+        
+        ion-icon {
+            color:rgb(222, 218, 218);
+        }
+
+        ion-label {
+            color:rgb(222, 218, 218);
+        }
+    }
+}
+
+@media only screen and (max-width: 512px){
+
+    ion-list {
+        //width: 150px;
+       // height: 120px;
+       // margin-left: 60px ;
+
+        ion-item {
+
+            ion-icon {
+                font-size: 16px;
+            }
+
+            ion-label {
+                font-size: 13px
+            }
+        }
+    }
+
+}
