@@ -5,15 +5,21 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { LogoComponent } from "../component/logo/logo.component";
+import { ProfileHeaderComponent } from "../component/profile-header/profile-header.component";
+import { SharedDirectiveModule } from '../directive/sharedmodule.module';
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule
-  ],
-  declarations: [HomePage]
+    declarations: [HomePage],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        HomePageRoutingModule,
+        LogoComponent,
+        ProfileHeaderComponent,
+        SharedDirectiveModule
+    ]
 })
 export class HomePageModule {}

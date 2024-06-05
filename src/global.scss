@@ -24,6 +24,7 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+//@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
 
 /**
  * Ionic Dark Mode
@@ -35,3 +36,13 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+@import "theme/component.scss";
+
+* {
+  scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
+  font-style: normal;    
+  font-size: 18px;
+}
+
+  
