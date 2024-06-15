@@ -16,7 +16,6 @@
    .right-header { 
     width: 50%;
 
-
     ion-label {
         font-size: 20px;
         color: darkgrey;
@@ -31,7 +30,6 @@
     }
 
     .about-text {
-
        p {
             margin-top: 20px;
             font-size: 18px;
@@ -73,7 +71,7 @@
 
 @media only screen and (max-width: 512px) {
     .two-column-section {
-            padding: 10px;
+           // padding: 10px;
             width: 90%;
             align-items: center;
     
@@ -91,7 +89,7 @@
                 .about-text {
                     p {
                         margin-top: 10px;
-                        font-size: 10px;
+                        font-size: 8px;
                         text-align:justify;
                     }
                 }
@@ -100,19 +98,19 @@
     
             .left-header {
                 border: 5px solid red;
-                width: 45%;
-                padding: 10px;
+                width: 35%;
+                padding: 5px;
     
-                ion-label {
-                    font-size: 10px;
-                    line-height: 0px;
+                p {
+                    font-size: 8px;
+                   // line-height: 0px;
                 }
     
                 .no-of-years {
                     p {
                         color: antiquewhite;
                         font-weight: 900;
-                        font-size: 25px;
+                        font-size: 20px;
                       //  line-height: 0px;
                     }
     

@@ -57,14 +57,12 @@ swiper-container::part(button-next) {
 
     .slider-image {
         .image {
-            height: 800px;                       
+            height: 800px;                                
 
             img {
-                display: block;
-                object-fit: cover;
-                overflow: hidden;    
-                max-height: 100%;
-                max-width: 100%;                  
+                object-fit: contain; 
+              //  max-height: 100%;
+                width: 100%;                  
             }
         }
     }
@@ -86,6 +84,7 @@ swiper-container::part(button-next) {
     }   
 
     .slider-image { 
+     
         .text-prop {
             padding: 10px; 
             ion-text {  

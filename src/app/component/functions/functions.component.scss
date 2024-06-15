@@ -25,13 +25,13 @@
             width: 100%;
 
             img {
-                margin: 10px;
-                width: 150px;
+                margin: 5px;
+                width: 100px;
             }
 
             ion-label {
                 font-size: 18px;
-                margin: 10px;
+                margin: 5px;
                 color: darkgrey;
                 font-weight: 700;
             }
@@ -39,7 +39,7 @@
             span {
              //   font-size: 18px;
                 text-align: justify;
-                padding: 20px;
+                padding: 10px;
             }
 
             .arrow-navigate {
@@ -67,8 +67,6 @@
         }
 
     }
-
-
 }
 
 @media only screen and (max-width: 512px) {
@@ -80,31 +78,31 @@
        // margin: 10px;
 
         .border-line {
-            height: 200px;
+            height: 0px;
         }
     
         .function-wrapper {        
             .function-item {
                 img {
-                    width: 60px;
+                    width: 40px;
                 }
     
                 ion-label {
-                    font-size: 12px;
+                    font-size: 10px;
                     text-transform: capitalize;
                 }
     
                 span {
-                    font-size: 10px;
-                    padding: 10px;
+                    font-size: 8px;
+                    //padding: 10px;
                 }
     
                 .arrow-navigate {  
                     p {
-                        font-size: 10px;
+                        font-size: 8px;
     
                         ion-icon {
-                         font-size: 12px;
+                         font-size: 10px;
                         }
     
                         ion-icon:hover {
@@ -115,7 +113,7 @@
             }
     
         }
-    
+
     
     }
     
