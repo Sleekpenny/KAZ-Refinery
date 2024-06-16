@@ -1,0 +1,15 @@
+.latest-wrappers {
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+
+    .wrapper {
+        display: flex;
+
+        .latest-jobs {
+            width: 30%;
+            position: fixed;
+        }
+
+    }
+}
