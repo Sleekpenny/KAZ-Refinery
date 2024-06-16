@@ -6,7 +6,6 @@
 
 .banner-attributes {
   height: 70vh;
-  border: 1px solid white;
   position: relative;
   .image-holder {
     height: 70vh;
@@ -51,5 +50,35 @@
 
 
 @media only screen and (max-width: 512px) {
+    .banner-attributes {
+        height: 30vh;
+        .image-holder {
+          height: 30vh;
+          img {
+            width: 100%;
+          }
+        }
+        .overlay {
+           .overlay-prop {
+            width: 90%;
+            gap: 10px;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+      
+            .company-service-year {
+              width: 30%;
+            }
+      
+            .company-attributes {
+             gap: 10px;
+              .attribute {
+                font-size: var(--pen-tiny-font);
+              }
+            }
+          }
+        }
+      }
     
 }
