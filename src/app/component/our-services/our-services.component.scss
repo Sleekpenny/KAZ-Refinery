@@ -39,33 +39,7 @@
 
    }    
 
-   .left-header {
-    width: 15%;
-    padding: 10px;
-    border: 10px solid red ;
-    align-items: center;
-
-    ion-label {
-        font-size: 20px;
-
-    }
-
-    .no-of-years {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-
-        p {
-            color: antiquewhite;
-            font-weight: 900;
-            font-size: 50px;
-        }
-        span {
-            color:darkgrey;
-        }
-    }
-   }
+  
 
 }
 
