@@ -1,27 +1,54 @@
-.left-header {
-    width: 15%;
-    padding: 10px;
-    border: 10px solid red ;
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
 
-    ion-label {
-        font-size: 20px;
+.left-header {
+  padding: 10px;
+  border: 10px solid red;
 
+  .company {
+    font-size: var(--pen-md-font);
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .no-of-years {
+    @include flex-center();
+    gap: 10px;
+    margin-top: 5px;
+
+    .years {
+      color: var(--ion-color-primary-contrast);
+      font-weight: 700;
+      font-size: 50px;
+    }
+    .experience {
+      color: var(--ion-color-dark-tint);
+        font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .left-header {
+    border: 5px solid red;
+    padding: 5px;
+
+    .company {
+        font-size: 8px;
     }
 
     .no-of-years {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
+    .years {
+        font-size: 20px;
+      }
 
-        p {
-            color: antiquewhite;
-            font-weight: 900;
-            font-size: 50px;
-        }
-        span {
-            color:darkgrey;
-        }
+    .experience {
+        color: red;
+        font-size: 8px;
+      }
     }
-   }
+  }
+}

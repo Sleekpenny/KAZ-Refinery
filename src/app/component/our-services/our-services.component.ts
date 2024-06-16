@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { CompanyServiceYearComponent } from "../company-service-year/company-service-year.component";
 
 @Component({
-  selector: 'app-our-services',
-  templateUrl: './our-services.component.html',
-  styleUrls: ['./our-services.component.scss'],
-  standalone: true,
-  imports: [CommonModule, IonicModule]
+    selector: 'app-our-services',
+    templateUrl: './our-services.component.html',
+    styleUrls: ['./our-services.component.scss'],
+    standalone: true,
+    imports: [CommonModule, IonicModule, CompanyServiceYearComponent]
 })
 export class OurServicesComponent   {
 
