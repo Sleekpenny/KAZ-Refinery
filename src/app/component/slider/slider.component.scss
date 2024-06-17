@@ -28,8 +28,7 @@ swiper-container::part(button-next) {
         align-items: end;
         flex-direction: column;
         padding: 20px;
-      
-    //    border: 2px solid white;
+
 
         ion-text {
             transform: translateY(-40px);
@@ -61,7 +60,6 @@ swiper-container::part(button-next) {
 
             img {
                 object-fit: contain; 
-              //  max-height: 100%;
                 width: 100%;                  
             }
         }

@@ -10,7 +10,7 @@
   .image-holder {
     height: 70vh;
     img {
-      width: 80%;
+      width: 100%;
       height: 100%;
       object-fit: cover;
     }
@@ -19,7 +19,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.808);
     width: 100%;
     height: 100%;
     @include flex-center();
@@ -38,7 +38,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
 
         .attribute {
           font-size: var(--pen-lg-font);
@@ -54,9 +54,6 @@
         height: 30vh;
         .image-holder {
           height: 30vh;
-          img {
-            width: 100%;
-          }
         }
         .overlay {
            .overlay-prop {
