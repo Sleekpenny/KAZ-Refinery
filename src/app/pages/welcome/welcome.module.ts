@@ -13,6 +13,7 @@ import { FunctionsComponent } from 'src/app/component/functions/functions.compon
 import { CompanyAboutComponent } from 'src/app/component/company-about/company-about.component';
 import { GuidingPrinciplesComponent } from "../../component/guiding-principles/guiding-principles.component";
 import { BannerAttributesComponent } from "../../component/banner-attributes/banner-attributes.component";
+import { LatestComponent } from "../../component/latest/latest.component";
 
 @NgModule({
     declarations: [WelcomePage],
@@ -26,7 +27,8 @@ import { BannerAttributesComponent } from "../../component/banner-attributes/ban
         FunctionsComponent,
         CompanyAboutComponent,
         GuidingPrinciplesComponent,
-        BannerAttributesComponent
+        BannerAttributesComponent,
+        LatestComponent
     ]
 })
 export class WelcomePageModule {}
