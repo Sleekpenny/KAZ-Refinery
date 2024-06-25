@@ -14,6 +14,7 @@ import { CompanyAboutComponent } from 'src/app/component/company-about/company-a
 import { GuidingPrinciplesComponent } from "../../component/guiding-principles/guiding-principles.component";
 import { BannerAttributesComponent } from "../../component/banner-attributes/banner-attributes.component";
 import { LatestComponent } from "../../component/latest/latest.component";
+import { SponsorCompaniesComponent } from "../../component/sponsor-companies/sponsor-companies.component";
 
 @NgModule({
     declarations: [WelcomePage],
@@ -28,7 +29,8 @@ import { LatestComponent } from "../../component/latest/latest.component";
         CompanyAboutComponent,
         GuidingPrinciplesComponent,
         BannerAttributesComponent,
-        LatestComponent
+        LatestComponent,
+        SponsorCompaniesComponent
     ]
 })
 export class WelcomePageModule {}

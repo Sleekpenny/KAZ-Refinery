@@ -17,6 +17,9 @@
 .banner-attributes {
     margin-top: 50px;
 }
+.sponsor-companies {
+    margin-top: 50px;
+}
 
 @media only screen and (max-width: 512px){
     .service-page {
@@ -33,7 +36,10 @@
     }
 
     .banner-attributes {
+        margin-top: 20px;        
+    }
+
+    .sponsor-companies {
         margin-top: 20px;
-        
     }
 }
