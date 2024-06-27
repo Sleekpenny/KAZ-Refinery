@@ -1,0 +1,38 @@
+<div class="footer">
+  <div class="footer-contents desktop-only">
+    <div class="footer-list-contents">
+      <div class="company-profile">
+        <app-company-logo />
+        <app-social-media-icons />
+      </div>
+      <div class="company-offers" *ngIf="footerContent">
+        <app-company-offers
+          *ngFor="let footer of footerContent; let i = index"
+          [footer]="footer"
+        />
+      </div>
+    </div>
+    <app-company-term-of-operation />
+  </div>
+
+  <div class="footer-contents mobile-only">
+    <div class="company-profile">
+      <app-company-logo />
+      <app-social-media-icons />
+    </div>
+    <ion-accordion-group *ngIf="footerContent">
+      <ion-accordion toggleIcon="none" *ngFor="let footer of footerContent">
+        <ion-item slot="header" color="none" lines="none">
+          <ion-label>
+            {{ footer.title }}
+            <img src="/assets/image/icons8-sort-down-48.png" />
+          </ion-label>
+        </ion-item>
+        <span slot="content" *ngFor="let list of footer.content">
+          {{ list }}
+        </span>
+      </ion-accordion>
+    </ion-accordion-group>
+    <app-company-term-of-operation />
+  </div>
+</div>

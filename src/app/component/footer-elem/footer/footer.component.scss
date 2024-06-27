@@ -1,0 +1,96 @@
+@mixin flex-space-btw {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin hide {
+  display: none;
+  visibility: hidden;
+}
+
+.footer {
+  background-color: black;
+  height: 70vh;
+
+  .footer-contents {
+    margin: auto;
+    width: 80%;
+    padding: 50px;
+
+    .footer-list-contents {
+      display: flex;
+      @include flex-space-btw();
+
+      .company-offers {
+        width: 70%;
+        @include flex-space-btw();
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .desktop-only {
+    @include hide();
+  }
+
+  .footer {
+    .footer-contents {
+      margin: 10px;
+      padding: 0px;
+      width: 100%;
+
+      .company-profile {
+        margin: 15px;
+      }
+
+      ion-accordion-group {
+        margin-top: 20px;
+        ion-accordion {
+          ion-item {
+            display: flex;
+            align-items: center;
+
+            ion-label {
+              font-size: 14px;
+
+              img {
+                width: 10px;
+              }
+            }
+          }
+          span {
+            margin: 0 0 10px;
+            color: grey;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+
+      ion-accordion.accordion-expanding,
+      ion-accordion.accordion-expanded {
+        width: calc(100% - 32px);
+        margin: 16px auto;
+      }
+
+      ion-accordion.accordion-collapsing ion-item[slot="header"] {
+        transform: translateX(-10px);
+        transition: all 100ms linear;
+      }
+
+      ion-accordion.accordion-expanding ion-item[slot="header"],
+      ion-accordion.accordion-expanded ion-item[slot="header"] {
+        transform: translateX(100px);
+        transition: all 200ms linear;
+        border-top: 0.5px solid white;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 825px) {
+  .mobile-only {
+    @include hide();
+  }
+}

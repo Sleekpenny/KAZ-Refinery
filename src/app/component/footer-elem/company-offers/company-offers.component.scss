@@ -1,0 +1,18 @@
+.company-offer {
+  display: flex;
+  flex-direction: column;
+
+  ion-label {
+    margin: 0 0 20px;
+  }
+
+  span {
+    color: grey;
+    margin: 0 0 20px;
+    cursor: pointer;
+  }
+
+  span:hover {
+    color: white;
+  }
+}

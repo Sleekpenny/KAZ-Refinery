@@ -1,0 +1,44 @@
+.footer-bottom-content {
+  margin-top: 200px;
+
+  .company-operation {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin: 0 0 10px;
+
+    ion-icon {
+      font-size: 25px;
+      color: grey;
+    }
+  }
+
+  .divider-line {
+    border: 2px solid rgb(80, 173, 9);
+    margin: 0 0 20px;
+  }
+
+  .company-entity {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .footer-bottom-content {
+    margin: 150px 0 0 15px;
+    span {
+      font-size: 12px;
+    }
+    .divider-line {
+      border: none;
+    }
+
+    .company-entity {
+      flex-direction: column;
+      span {
+        margin: 0 0 10px;
+      }
+    }
+  }
+}
