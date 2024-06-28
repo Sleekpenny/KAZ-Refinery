@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonIcon } from '@ionic/angular/standalone';
-import { Social } from 'src/app/interface/social-media.interface';
+import { Social } from 'src/app/interface/socials.interface';
 import { UtilitiesService } from 'src/app/service/utilities.service';
 
 @Component({
@@ -11,17 +11,17 @@ import { UtilitiesService } from 'src/app/service/utilities.service';
   standalone: true,
   imports: [IonIcon, CommonModule]
 })
-export class SocialMediaIconsComponent  implements OnInit {
+export class SocialMediaIconsComponent   {
 
   constructor(private utilities: UtilitiesService) { }
 
-  ngOnInit() {}
+  
 
   socials: Social[] = [
-    {url: 'https://twitter.com', icon: '/assets/icon/logo-twitter.svg'},
-    {url: 'https://whatsapp.com', icon: '/assets/icon/logo-whatsapp.svg'},
-    {url: 'https://instagram.com', icon: '/assets/icon/logo-instagram.svg'},
-    {url: 'https://youtube.com', icon: '/assets/icon/logo-youtube.svg'},
+    {url: 'https://twitter.com', icon: 'logo-twitter'},
+    {url: 'https://whatsapp.com', icon: 'logo-whatsapp'},
+    {url: 'https://instagram.com', icon: 'logo-instagram'},
+    {url: 'https://youtube.com', icon: 'logo-youtube'},
   ] 
   
   openAppStore(link: string){

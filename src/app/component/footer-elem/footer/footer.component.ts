@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { IonLabel, IonIcon, IonList, IonItem, IonAccordionGroup, IonAccordion} from '@ionic/angular/standalone';
-import { FooterList } from 'src/app/interface/footer.interface';
 import { CompanyOffersComponent } from "../company-offers/company-offers.component";
 import { CompanyLogoComponent } from "../../company-logo/company-logo.component";
 import { SocialMediaIconsComponent } from "../../social-media-icons/social-media-icons.component";
 import { CompanyTermOfOperationComponent } from "../company-term-of-operation/company-term-of-operation.component";
+import { FooterList } from 'src/app/interface/footer.interface';
 
 @Component({
     selector: 'app-footer',
@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
 
   footerContent: FooterList[] = [
     {
-      title: 'About MishPro',
+      title: 'About Kaz Refinery',
       content: [
         'About Us', 
         'Where to Buy', 

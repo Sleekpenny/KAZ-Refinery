@@ -15,6 +15,7 @@ import { GuidingPrinciplesComponent } from "../../component/guiding-principles/g
 import { BannerAttributesComponent } from "../../component/banner-attributes/banner-attributes.component";
 import { LatestComponent } from "../../component/latest/latest.component";
 import { SponsorCompaniesComponent } from "../../component/sponsor-companies/sponsor-companies.component";
+import { FooterComponent } from "../../component/footer-elem/footer/footer.component";
 
 @NgModule({
     declarations: [WelcomePage],
@@ -30,7 +31,8 @@ import { SponsorCompaniesComponent } from "../../component/sponsor-companies/spo
         GuidingPrinciplesComponent,
         BannerAttributesComponent,
         LatestComponent,
-        SponsorCompaniesComponent
+        SponsorCompaniesComponent,
+        FooterComponent
     ]
 })
 export class WelcomePageModule {}

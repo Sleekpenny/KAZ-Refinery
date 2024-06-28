@@ -13,19 +13,16 @@
 .latest-wrappers {
   margin: auto;
   width: 80%;
+  overflow: hidden;
   height: 100vh;
 
   .wrapper {
-    @include flex-end();
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
     height: 100%;
-    overflow: hidden;
 
     .latest-jobs {
-      width: 30%;
-      @include flex-center();
-      height: 100%;
-
+      display: block;
       ion-label {
         font-size: var(--pen-xlg-font);
       }
@@ -36,8 +33,7 @@
         flex-direction: column;
         align-items: end;
         overflow-y: auto;
-        width: 100%;
-        height: 100%;
+
 
       .image-holder {
         width: 700px;

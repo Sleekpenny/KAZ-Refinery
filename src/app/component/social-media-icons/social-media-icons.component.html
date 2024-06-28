@@ -2,7 +2,7 @@
   <div class="social-icons" *ngFor="let social of socials">
     <ion-icon 
     (click)="openAppStore(social.url)"
-    [src]="social.icon"
+    [name]="social.icon"
     ></ion-icon>
   </div>
 </div>

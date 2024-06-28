@@ -9,9 +9,6 @@
 }
 
 .footer {
-  background-color: black;
-  height: 70vh;
-
   .footer-contents {
     margin: auto;
     width: 80%;
@@ -54,8 +51,8 @@
             ion-label {
               font-size: 14px;
 
-              img {
-                width: 10px;
+              ion-icon {
+                font-size: 10px;
               }
             }
           }

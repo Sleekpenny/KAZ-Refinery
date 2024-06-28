@@ -4,67 +4,13 @@
       <ion-label>LATEST POST</ion-label>
     </div>
 
-    <div class="scrollable-images">
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
+    <div class="scrollable-images">     
+      <div class="image-holder" *ngFor="let latest of images">
+        <img [src]="latest.image" />
         <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
+        <ion-label> {{latest.title}} </ion-label>
         </ion-text>
-      </div>     
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
-        <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
-        </ion-text>
-      </div>     
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
-        <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
-        </ion-text>
-      </div>     
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
-        <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
-        </ion-text>
-      </div>     
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
-        <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
-        </ion-text>
-      </div>     
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
-        <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
-        </ion-text>
-      </div>     
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
-        <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
-        </ion-text>
-      </div>     
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
-        <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
-        </ion-text>
-      </div>     
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
-        <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
-        </ion-text>
-      </div>     
-      <div class="image-holder">
-        <img src="assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg" />
-        <ion-text>          
-        <ion-label> Modern Refinery </ion-label>
-        </ion-text>
-      </div>     
+      </div>         
     </div>
   </div>
 </div>

@@ -22,30 +22,30 @@ export class SliderComponent {
 
   images: sliderItems[] = [
     {
-      image:'assets/images/ehud-neuhaus-wW5854gAm1c-unsplash.jpg',
-      title: 'Kaz Address ',
+      image:'https://images.unsplash.com/photo-1546185058-592ead754d27?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      title: 'Kaz Refinery ',
+      about: 'We are spider men in Refining',
+    },
+    {
+      image:'https://plus.unsplash.com/premium_photo-1682144407366-83198874f4fb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      title: 'Refining of raw products',
       about: 'Ask the managing director',
     },
     {
-      image:'assets/images/cristina-gavrila-Ve_QjaM54OA-unsplash.jpg',
-      title: 'Kaz Address ',
-      about: 'Ask the managing director',
+      image:'https://images.unsplash.com/photo-1591004835879-ef7db87aabc3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      title: 'Refining to its purest form ',
+      about: 'We are just a call away homie',
     },
     {
-      image:'assets/images/patrick-hendry-6xeDIZgoPaw-unsplash.jpg',
-      title: 'Kaz Address ',
-      about: 'Ask the managing director',
-    },
-    {
-      image:'assets/images/eduardo-cano-photo-co-7OML-RUYSA4-unsplash.jpg',
-      title: 'Kaz Address ',
-      about: 'Ask the managing director',
+      image:'https://images.unsplash.com/photo-1556253253-7a17ff7de928?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      title: 'Kaz Kerosene ',
+      about: 'They are obviously not like us homeie',
     },
 
     {
-      image:'assets/images/andre-robillard-IUwLkxL49co-unsplash.jpg',
-      title: 'Kaz Address ',
-      about: 'Ask the managing director',
+      image:'https://images.unsplash.com/photo-1556114846-f753bec8a9f5?q=80&w=1539&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      title: 'Kaz Petrochemicals',
+      about: 'We have such an accommodating staff',
     },
 
   ];
