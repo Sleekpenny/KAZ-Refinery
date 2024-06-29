@@ -8,12 +8,6 @@
       <app-profile-header />
     </div>
 
-    <!--        <div class="nav-menu show-on-desktop-only" *ngFor="let menu of menuItem; let i = index">
-          <ion-buttons  routerLinkActive="actived" [routerLinkActiveOptions]="{exact: false}" >
-          <ion-button  [routerLink]="[menu.path]">{{menu.title}}</ion-button>
-          </ion-buttons>
-        </div> -->
-
     <div class="right-menu show-on-desktop-only">
       <div class="profile-icon" navigateTo="main/welcome">
         <ion-label>Home</ion-label>
@@ -49,7 +43,6 @@
           <ion-item>
             <app-logo />
           </ion-item>
-
           <ion-menu-toggle>
             <ion-item
               [routerLink]="[p.path]"
