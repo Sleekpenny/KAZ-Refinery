@@ -35,15 +35,15 @@ export class HomePage {
   {path:'', title: 'About', dropDown: false},
   {path:'', title: 'Service', dropDown: true, open: false,
    subItems: [
-      {path:'', lists: 'Production'},
-      {path:'', lists: 'PetroChemical'},
-      {path:'', lists: 'Drilling & Exploration'}
+      {path:'production', lists: 'Production'},
+      {path:'production', lists: 'PetroChemical'},
+      {path:'production', lists: 'Drilling & Exploration'}
    ]},
   {path:'', title: 'Environment', dropDown: true, open: false, 
    subItems:[
-      {path:'', lists:'Safety'},
-      {path:'', lists:'Social Responsibility'},
-      {path:'', lists:'Social Policies'}
+      {path:'production', lists:'Safety'},
+      {path:'production', lists:'Social Responsibility'},
+      {path:'production', lists:'Social Policies'}
    ]},
   {path:'', title: 'Contact Us'}
  ] 
