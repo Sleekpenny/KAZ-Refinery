@@ -5,6 +5,8 @@
 }
 
 .banner-attributes {
+  background-color: var(--ion-color-tertiary);
+  color: var(--ion-color-tertiary-contrast);
   height: 70vh;
   position: relative;
   .image-holder {

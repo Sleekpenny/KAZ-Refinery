@@ -9,7 +9,8 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
-  background-color: var(--ion-color-background);
+  background-color: var(--ion-color-tertiary);
+  color: var(--ion-color-tertiary-contrast);
   padding: 20px;
 
   .right-header {
@@ -17,7 +18,6 @@
 
     ion-label {
       font-size: var(--pen-lg-font);
-      color: var(--ion-color-medium);
       padding: 5px;
       font-weight: 700;
     }
@@ -28,11 +28,9 @@
       background-color: var(--ion-color-medium);
     }
 
-    .about-text {
-      p {
-        margin-top: 20px;
-        font-size: var(--pen-lg-font);
-      }
+    p {
+      margin-top: 20px;
+      font-size: var(--pen-lg-font);
     }
   }
 
@@ -56,15 +54,13 @@
       .border-line {
         width: 30px;
       }
-
-      .about-text {
         p {
           margin-top: 10px;
           font-size: var(--pen-tiny-font);
           text-align: justify;
         }
       }
-    }
+    
 
     .company-service {
       width: 35%;

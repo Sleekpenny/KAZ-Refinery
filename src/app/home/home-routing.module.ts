@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
-import { Error404PageModule } from '../pages/error-404/error-404.module';
-import { authGuardGuard } from '../service/auth-guard.guard';
+
 
 const routes: Routes = [
   {
@@ -14,6 +13,10 @@ const routes: Routes = [
         loadChildren: () => import('../pages/welcome/welcome.module').then( m => m.WelcomePageModule)
       },
       {
+        path: 'production',
+        loadChildren: () => import('../pages/production/production.module').then( m => m.ProductionPageModule)
+      },
+      {
         path: '',
         redirectTo: '/main/welcome',
         pathMatch: 'full',
@@ -22,6 +25,7 @@ const routes: Routes = [
         path: '**',
         loadChildren: () => import('../pages/error-404/error-404.module').then( m => m.Error404PageModule)
       },
+
     ]
   }
 ];

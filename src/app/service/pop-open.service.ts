@@ -15,10 +15,10 @@ export class PopOpenService {
 
     this.popover = await this.popoverController.create({
       component,
-      event: e,
+      event: e,  
       dismissOnSelect: true,
       showBackdrop: false,
-      translucent: true,
+      translucent: true,  
       animated: true,
       arrow: true,
 

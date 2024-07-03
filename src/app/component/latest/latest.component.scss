@@ -55,6 +55,7 @@
           height: 100%;
           @include flex-end();
           cursor: pointer;
+          color: var(--ion-color-light);
 
           ion-label {
             font-size: var(--pen-lg-font);

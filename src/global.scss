@@ -46,12 +46,20 @@
 * {
   scroll-behavior: smooth;
   font-family: "Jost", sans-serif;
-  font-style: normal;    
-
+  font-style: normal;
+  font-size: 14px;
 }
 
 .profile-icon.sc-ion-buttons-ios {
- display: flex;
+  display: flex;
 }
 
+ion-breadcrumbs {
+  padding-bottom: 20px;
 
+  ion-breadcrumb::part(native) {
+  padding-left: 0px;
+  
+  padding-right: 0px;
+  }
+}

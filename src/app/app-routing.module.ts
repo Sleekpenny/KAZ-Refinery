@@ -4,7 +4,7 @@ import { authGuardGuard } from './service/auth-guard.guard';
 
 const routes: Routes = [
   {
-    path: 'main', ///canActivate: [authGuardGuard],
+    path: 'main', canActivate: [authGuardGuard],
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
     
   },
@@ -21,6 +21,7 @@ const routes: Routes = [
     path: '**',
     loadChildren: () => import('./pages/error-404/error-404.module').then( m => m.Error404PageModule)
   },
+
 
 
 

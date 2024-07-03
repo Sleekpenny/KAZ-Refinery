@@ -16,6 +16,10 @@ import { MenuController, ModalController } from '@ionic/angular';
 export class HomePage {
   @ViewChild("popover") popover;
 
+  handleClick(event) {
+   console.log('Bottom Clicked' + event)
+  }
+
   isDesktop: Observable<any>;
   Open: boolean = false;  
   selectedItem = null;
